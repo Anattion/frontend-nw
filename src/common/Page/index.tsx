@@ -40,7 +40,7 @@ const Page: React.FC<Props> = ({ title, description, image, siteName, children }
           rel="stylesheet"
           
         ></link>                                     
-        <link rel="stylesheet" href="_next/static/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/_next/static/css/bootstrap.min.css"/>
       </Head>
       <div className="page-container flex min-h-screen flex-col bg-page">{children}</div>
     </>
