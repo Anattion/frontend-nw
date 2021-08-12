@@ -6,11 +6,29 @@
 
 @import "../src/styles/bootstrap.css";
 
+
+
 html,
+
+p.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    background-color: darkblue;
+    text-align: justify;
+    font-size: small;
+}
+
 body {
     width: 100%;
     height: 100%;
+    background-color: brown;
 }
+
+.conteudo_right {
+    background-color: blue;
+}
+
 
 #__next {
     height: 100%;

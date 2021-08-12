@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     <>
       <Page title="Pagina Principal">
         <div className="flex items-center justify-center flex-col h-full overflow-auto">
-          <h1 className="text-xl my-7">Whats on your mind</h1>
+          <h1 className="text-xl my-8">Whats on your mind</h1>
               <div className="conteudo">
             {repositories.map((repo) => (
               <div className="flex items-center justify-center flex-col mt-10" key={repo.idMeal}>
@@ -25,9 +25,7 @@ const Home: React.FC = () => {
                   <br /> {repo.strMeal}
                 </h2>
                 <img className=".imagem" src={repo.strMealThumb} alt={repo.strMeal} width="200"></img>
-                <p className="conteudo-right">
-                  <br /> {repo.strInstructions}
-                </p>
+                <p className='flex items-center justify-center flex-col mt-10'> {repo.strInstructions} </p>
                 <hr></hr>
               </div>
             ))}

@@ -31,7 +31,7 @@ const Home: React.FC = () => {
                   alt={repo.strMeal}
                   width="200"
                 ></img>
-                <p className="conteudo-right">
+                <p className="blocktextt">
                   <br /> {repo.strInstructions}
                 </p>
                 <hr></hr>
