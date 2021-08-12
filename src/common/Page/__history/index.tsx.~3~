@@ -38,7 +38,6 @@ const Page: React.FC<Props> = ({ title, description, image, siteName, children }
         <link
           href=''
           rel="stylesheet"
-          
         ></link>
         <link rel="stylesheet" href="/tree/main/public/bootstrap.min.css"/>
       </Head>
