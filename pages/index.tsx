@@ -12,6 +12,7 @@ const Home: React.FC = () => {
     axios
       .get('https://ana-personal-project.herokuapp.com/meal')
       .then((response) => {
+        console.log(response.data)
         setRepositories(response.data);
       });
   }, []);
