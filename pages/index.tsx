@@ -3,6 +3,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Page from '../src/common/Page'
+import cors from "cors"
 
 
 const Home: React.FC = () => {
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
   const [text, setText] = useState('');
   useEffect(() => {
     axios
-      .get('https://ana-personal-project.herokuapp.com/meal')
+      .get('https://ana-personal-project.herokuapp.com/meal', cors())
       .then((response) => {
         console.log(response.data)
         setRepositories(response.data);
